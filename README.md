@@ -85,6 +85,9 @@ To train your policy for tasks, for example:
 ```bash
 # run self-play training for Ant Sumo task
 python train.py task=MA_Ant_Sumo headless=True
+# ImportError: libpython3.7m.so.1.0: cannot open shared object file: No such file or directory
+export LD_LIBRARY_PATH=/path/to/libpython/directory
+# e.g. export LD_LIBRARY_PATH=/home/shangding/anaconda3/envs/maIsaac37/lib
 ```
 
 ```bash
